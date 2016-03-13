@@ -11,6 +11,10 @@ brew link autoconf
 brew link automake
 brew link libtool
 brew install tree 
+brew install wget
+brew install leiningen
+bew install tmux
+brew install mosh
 brew install vim --override-system-vi
 brew install macvim --override-system-vim --custom-system-icons
 brew install cmake
