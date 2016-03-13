@@ -1,25 +1,33 @@
 #!/bin/bash
 set -x #echo on
 
+echo 'Install Xcode'
+xcode-select --install
+echo '--------'
+
 echo 'Setting up homebrew'
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew install autoconf 
 brew install automake 
 brew install libtool
-brew link autoconf 
-brew link automake
-brew link libtool
 brew install tree 
 brew install wget
 brew install leiningen
-bew install tmux
+brew install tmux
 brew install mosh
 brew install vim --override-system-vi
 brew install macvim --override-system-vim --custom-system-icons
 brew install cmake
 brew install ninja
 brew install go
+brew install caskroom/cask/brew-cask
+brew cask install dockertoolbox
+
+brew link autoconf 
+brew link automake
+brew link libtool
+brew link macvim
 echo '--------'
 
 
