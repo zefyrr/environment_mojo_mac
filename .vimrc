@@ -10,14 +10,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'jelera/vim-javascript-syntax'
-Bundle 'leafgarland/typescript-vim'
-Bundle 'sudar/vim-arduino-syntax'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'FStarLang/VimFStar'
-Bundle "motus/pig.vim"
 Bundle 'klen/python-mode'
 
 call vundle#end()            " required
