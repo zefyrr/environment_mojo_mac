@@ -7,6 +7,11 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+
 function setjdk() {
   if [ $# -ne 0 ]; then
    removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
@@ -23,4 +28,8 @@ function setjdk() {
 setjdk 1.8
 
 
+
+
+# added by Anaconda2 4.2.0 installer
+export PATH="/Users/okareem/anaconda/bin:$PATH"
 

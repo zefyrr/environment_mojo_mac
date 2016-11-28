@@ -18,12 +18,10 @@ brew install tmux
 brew install mosh
 brew install vim --override-system-vi
 brew install macvim --override-system-vim --custom-system-icons
-brew install cmake
-brew install ninja
-brew install go
 brew cask install dockertoolbox
+brew install git
+brew install bash-completion
 
-brew link autoconf 
 brew link automake
 brew link libtool
 brew link macvim
@@ -48,8 +46,6 @@ ln -s `pwd`/.vimrc ~/.vimrc
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-completer
 echo '--------'
 
 echo 'Setting up git prefs'

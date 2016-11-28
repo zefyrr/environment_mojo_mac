@@ -51,4 +51,6 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
 
