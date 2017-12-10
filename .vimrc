@@ -13,7 +13,6 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/nerdtree'
 Bundle 'ekalinin/Dockerfile.vim'
-Bundle 'FStarLang/VimFStar'
 Bundle 'klen/python-mode'
 
 call vundle#end()            " required
