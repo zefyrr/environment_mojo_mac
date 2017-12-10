@@ -17,14 +17,11 @@ brew install leiningen
 brew install tmux
 brew install mosh
 brew install vim --override-system-vi
-brew install macvim --override-system-vim --custom-system-icons
-brew cask install dockertoolbox
 brew install git
 brew install bash-completion
 
 brew link automake
 brew link libtool
-brew link macvim
 echo '--------'
 
 
