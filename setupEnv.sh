@@ -15,6 +15,7 @@ brew install tree
 brew install wget
 brew install leiningen
 brew install tmux
+brew install ghc
 brew install mosh
 brew install vim --override-system-vi
 brew install git
