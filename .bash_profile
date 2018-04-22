@@ -1,5 +1,5 @@
 alias less='less --RAW-CONTROL-CHARS'
-alias ll='ls -la'
+alias ll='ls -lsa'
 
 export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
@@ -11,6 +11,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 function setjdk() {
   if [ $# -ne 0 ]; then
@@ -29,7 +33,11 @@ setjdk 1.8
 
 
 
+# added by Anaconda2 5.0.1 installer
+export PATH="/Users/okareem/anaconda2/bin:$PATH"
 
-# added by Anaconda2 4.2.0 installer
-export PATH="/Users/okareem/anaconda/bin:$PATH"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/okareem/bins/google-cloud-sdk/path.bash.inc' ]; then source '/Users/okareem/bins/google-cloud-sdk/path.bash.inc'; fi
 
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/okareem/bins/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/okareem/bins/google-cloud-sdk/completion.bash.inc'; fi

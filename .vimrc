@@ -22,6 +22,8 @@ filetype plugin indent on    " required
 syntax on
 set mouse=a
 set paste
+set backspace=indent,eol,start
+
 
 set expandtab
 set shiftwidth=2
