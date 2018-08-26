@@ -15,12 +15,13 @@ brew install tree
 brew install wget
 brew install tmux
 brew install cmake
+brew install google-cloud-sdk
 brew install vtk
 brew install mosh
 brew install vim --override-system-vi
-brew install git
 brew install bash-completion
-
+brew install cmake
+brew install bazel
 brew link automake
 brew link libtool
 echo '--------'

@@ -32,10 +32,6 @@ function setjdk() {
 setjdk 1.8
 
 
-
-# added by Anaconda2 5.0.1 installer
-export PATH="/Users/okareem/anaconda2/bin:$PATH"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/okareem/bins/google-cloud-sdk/path.bash.inc' ]; then source '/Users/okareem/bins/google-cloud-sdk/path.bash.inc'; fi
 
