@@ -29,7 +29,7 @@ function setjdk() {
  function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
  }
-setjdk 1.8
+setjdk 10.0.2
 
 
 # The next line updates PATH for the Google Cloud SDK.
